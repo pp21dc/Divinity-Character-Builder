@@ -4,12 +4,35 @@
     <title>Table Example</title>
 </head>
 
+<script type="text/javascript" charset="utf-8"> 
+
+  fetch('https://jsonplaceholder.typicode.com/todos')
+  .then(function (response){
+    return response.json();
+  })
+  .then(function (apiJsonData) {
+      console.log(apiJsonData);
+    })
+
+    function renderDataInTheTable(todos) {
+            const mytable = document.getElementById("html-data-table");
+            todos.forEach(todo => {
+                let newRow = document.createElement("tr");
+                Object.values(todo).forEach((value) => {
+                    let cell = document.createElement("td");
+                    cell.innerText = value;
+                    newRow.appendChild(cell);
+                })
+                mytable.appendChild(newRow);
+            });
+        }
+  </script>
+
 <body>
 
     <style>
         table {
             border-collapse: collapse;
-            width: 100%;
         }
 
         td,
@@ -20,24 +43,18 @@
         }
     </style>
 
-    <h1>TODO List</h1>
+    <h1>asdf</h1>
 
     <div id="data-table">
-        <table id="html-data-table">
-            <tr>
-                <th>userId</th>
-                <th>id</th>
-                <th>title</th>
-                <th>completed</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>1</td>
-                <td>My todo 1</td>
-                <td>false</td>
-            </tr>  
-        </table>    
-    </div>
+      <table id="html-data-table">
+          <tr>
+              <th>userId</th>
+              <th>id</th>
+              <th>title</th>
+              <th>completed</th>
+          </tr>
+      </table>    
+  </div>
 
 </body>
 
