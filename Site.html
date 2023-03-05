@@ -3,50 +3,43 @@
 <head>
     <title>Table Example</title>
 </head>
-
 <body>
-
-    <style>
-        table {
-            border-collapse: collapse;
-        }
-
-        td,
-        th {
-            border: 1px solid #000000;
-            text-align: left;
-            padding: 8px;
-        }
-    </style>
-
     <h1>asdf</h1>
-
-    <div id="data-table">
       <table id="html-data-table">
           <tr>
               <th>Spell Name</th>
-              <th><img src="img_girl.jpg"></th>
-              <th>Geomancer</th>
-              <th>Huntsman</th>
-              <th>Hydrosophist</th>
-              <th>Necromancer</th>
-              <th>Polymorph</th>
-              <th>Pyrokinetic</th>
-              <th>Scoundrel</th>
-              <th>Summoning</th>
-              <th>Warfare</th>
+              <th><img src="https://pp21dc.github.io/Divinity-Character-Builder/Images/Icn_Aer.png" style="width:50px;height:50px;"></th>
+              <th><img src="https://pp21dc.github.io/Divinity-Character-Builder/Images/Icn_Geo.png" style="width:50px;height:50px;"></th>
+              <th><img src="https://pp21dc.github.io/Divinity-Character-Builder/Images/Icn_Hun.png" style="width:50px;height:50px;"></th>
+              <th><img src="https://pp21dc.github.io/Divinity-Character-Builder/Images/Icn_Hyd.png" style="width:50px;height:50px;"></th>
+              <th><img src="https://pp21dc.github.io/Divinity-Character-Builder/Images/Icn_Nec.png" style="width:50px;height:50px;"></th>
+              <th><img src="https://pp21dc.github.io/Divinity-Character-Builder/Images/Icn_Pol.png" style="width:50px;height:50px;"></th>
+              <th><img src="https://pp21dc.github.io/Divinity-Character-Builder/Images/Icn_Pyr.png" style="width:50px;height:50px;"></th>
+              <th><img src="https://pp21dc.github.io/Divinity-Character-Builder/Images/Icn_Sco.png" style="width:50px;height:50px;"></th>
+              <th><img src="https://pp21dc.github.io/Divinity-Character-Builder/Images/Icn_Sum.png" style="width:50px;height:50px;"></th>
+              <th><img src="https://pp21dc.github.io/Divinity-Character-Builder/Images/Icn_War.png" style="width:50px;height:50px;"></th>
           </tr>
           <tr>
+            <td>Placeholder</td>
             <td>1</td>
             <td>1</td>
-            <td>My todo 1</td>
-            <td>false</td>
-
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
             <td><input type="checkbox" />    &nbsp;   </td>
         </tr>
       </table>    
-  </div>
+
+      <button type="button" onclick="createRow()">Try it</button>
+      <table id="myTable">
+        <!-- here goes our data! -->
+      </table>
 
 </body>
-
+<script src="build-table.js"></script>
 </html>
